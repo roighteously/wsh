@@ -5,6 +5,7 @@ const mods = [
 	require(path.resolve('./src/mod/wsTypes.js')),
 	require(path.resolve('./src/mod/sysop.js')),
 	require(path.resolve('./src/mod/files.js')),
+	require(path.resolve('./src/mod/child.js')),
 	require(path.resolve('./src/mod/includes.js')),
 ];
 

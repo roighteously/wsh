@@ -6,8 +6,8 @@ const CLEAR = true;
 
 // const fileName = 'modone.ws';
 // const file = path.resolve('./ws/' + fileName);
-fs.rmdir("./built", (err) => build, { recursive: true, force: true });
-fs.rmdir("./_wf_sandbox", (err) => {}, { recursive: true, force: true });
+if(fs.existsSync("./built")) fs.rmdirSync("./built", { recursive: true, force: true });
+if(fs.existsSync("./_wf_sandbox"))fs.rmdirSync("./_wf_sandbox", { recursive: true, force: true });
 
 if (!fs.existsSync("./built")) fs.mkdirSync("./built");
 if (!fs.existsSync("./built/lib")) fs.mkdirSync("./built/lib");
@@ -20,6 +20,8 @@ fs.writeFileSync(
 
 const folder = path.resolve("./ws/");
 fs.readdirSync(folder).forEach((f) => {
+	if(!f.endsWith('.ws')) return;
+	if(f.endsWith('.wsd')) return;
   file = path.resolve("./ws/" + f);
   const txt = fs.readFileSync(file).toString();
   const intLines = ["// Interpreted with WillySoft: HARD for JavaScript"];

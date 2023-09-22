@@ -11,15 +11,15 @@ module.exports = {
 		'@set ': 'l',
 		'printonln(': 'console.log("\\n" pl ',
 		'print': 'console.log',
-		'var': 'et',
-		'const': 'const',
+		'var ': 'et wsd',
+		'const ': 'const wsd',
 		// ws::global varname @=
 		'global ': '["',
 		'@=': '"] = ',
 		// @get:global varname @get:global:enddef,
 		'@get:global ': 'l["',
 		'@!': '"]',
-		'@get ': '',
+		'@get ': 'wsd',
 		'json::stringify': 'JSON.stringify',
 		'json::parse': 'JSON.parse',
 	}
