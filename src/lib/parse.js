@@ -7,6 +7,7 @@ const mods = [
 	require(path.resolve('./src/mod/files.js')),
 	require(path.resolve('./src/mod/child.js')),
 	require(path.resolve('./src/mod/includes.js')),
+	require(path.resolve('./src/mod/express.js')),
 ];
 
 module.exports = {
