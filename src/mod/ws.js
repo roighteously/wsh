@@ -11,6 +11,7 @@ module.exports = {
 		'@set ': 'l',
 		'printonln(': 'console.log("\\n" pl ',
 		'print': 'console.log',
+		'@CON': 'console',
 		'var ': 'et wsd',
 		'const ': 'const wsd',
 		// ws::global varname @=
@@ -19,6 +20,9 @@ module.exports = {
 		// @get:global varname @get:global:enddef,
 		'@get:global ': 'l["',
 		'@!': '"]',
+		'@base64::encode:': 'Buffer.from(',
+		'@enddef': ')',
+		'@base64:decode': '.toString("base64")',
 		'@get ': 'wsd',
 		'json::stringify': 'JSON.stringify',
 		'json::parse': 'JSON.parse',

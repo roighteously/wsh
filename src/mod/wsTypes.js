@@ -5,6 +5,7 @@ module.exports = {
 	do: {
 		'str': 'String',
 		'num': 'Number',
-		'obj': 'Object'
+		'obj': 'Object',
+		'dou': 'Number'
 	}
 }

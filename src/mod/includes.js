@@ -8,6 +8,7 @@ module.exports = {
 		'starts': '() {',
 		'ends': '}',
 		'::run' : '()',
+		'@export': 'module.exports =',
 		'mod::pkg ': 'module.exports = WILLYSOFT_COMPONENT_',
 		'mod::locreq(': 'require("./mod/',
 		'mod::glbreq(': 'require(',
